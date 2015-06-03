@@ -1,1 +1,1 @@
-web: python manage.py runserver 0.0.0.0:$PORT –noreload
+web: gunicorn clgmaterial.wsgi --log-file -
