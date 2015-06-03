@@ -1,0 +1,13 @@
+.desc {
+
+	margin-left: 6%;
+}
+
+.box {
+
+	border:1px red solid;
+	height:200px;
+	border-radius: 10px;
+	padding: 2%;
+	margin-left: 8%;
+}

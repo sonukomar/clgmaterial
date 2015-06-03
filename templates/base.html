@@ -1,0 +1,162 @@
+{% load static %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+{% block title %}
+{% endblock %}
+
+{% block meta %}
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock %}
+
+{% block css %}
+
+	<link rel="shortcut icon" type="image/x-icon" href="/static/images/book.gif" />
+	<link rel="Stylesheet" type="text/css" href="{% static "css/plugins/bootstrap/bootstrap.min.css" %}">
+	<link rel="Stylesheet" type="text/css" href="{% static "css/plugins/bootstrap/bootstrap-theme.min.css" %}">
+	<link rel="Stylesheet" type="text/css" href="{% static "css/plugins/bootstrap/bootstrap.css.map" %}">
+	<link rel="Stylesheet" type="text/css" href="{% static "css/base.css" %}">
+
+{% endblock %}
+
+{% block content %}
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
+  	<div class="container-fluid">
+	    <div class="row">
+	    	<div class="col-md-3">
+	    		<h3>College Materials</h3>
+	    	</div>
+	    	<div class="col-md-7">
+	    		<form class="navbar-form navbar-left" role="search">
+				  <div class="form-group">
+				    <input type="text" class="form-control search" placeholder="Search">
+				  </div>
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</form>
+	    		
+	    	</div>
+	    	<div class="col-md-2">
+	    		<h4>fb</h4>
+	    		
+	    	</div>
+	    </div>	
+		<div class="row">
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">Home</li>
+					<li>Contact</li>
+					<li>About</li>
+					<li>Product</li>
+					<li>How</li>
+				</ul>
+			</div>		
+		</div>
+    </div>
+</nav> -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid menubar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">College Material</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Our Products <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Contact us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- <div class="container-fluid">
+	<div class="row slider">
+		<div class="row slider text-center">
+			<div class="col-md-8 info">
+					<div class="col-md-10 slider_text">
+						<h3 class="quotes">Read/Download College lecture notes</h3>
+						<h3 class="quotes">Download last 10 yrs question papers</h3>
+						<h3 class="quotes">Get printed notes @ low prices</h3>
+						<h3 class="quotes">Call us @ 9590960483</h3>
+						<h3 class="quotes">saviour in exam's last time</h3>
+						<h3 class="quotes">Lets start the Preparation...JOIN US TODAY</h3>
+						
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="slider_img">
+						<img src="{% static "images/pic1.png" %}" alt="" class="img-responsive"/>
+					</div>
+				</div>
+			</div>
+	</div>
+	</div>
+</div> -->
+
+{% endblock %}
+
+{% block js %}
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="{% static "js/plugins/bootstrap/bootstrap.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "js/index.js" %}"></script>
+{% endblock %}
+
+{% block footer %}
+<footer>
+	<div class="container-fluid">
+		<div class="row footer_row">
+			<div class="col-md-12">
+				<ul class="footer">
+					<li>Home</li>
+					<li>Home</li>
+					<li>Home</li>
+					<li>Home</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+{% endblock %}
