@@ -103,7 +103,7 @@ USE_TZ = True
 
 STATIC_ROOT = 'staticfiles'
 
-STATIC_URL = '/static/'    
+STATIC_URL = 'https://clgmaterial.herokuapp.com'+'/static/'    
 
 
 STATICFILES_DIRS = (
