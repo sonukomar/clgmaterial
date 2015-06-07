@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'p$*j*va2b)@m9p52sso@+vmpt85e=3l%%nxhh(*7n(tw*s%s_4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -37,7 +37,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'data_details',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -104,8 +103,7 @@ USE_TZ = True
 
 STATIC_ROOT = 'staticfiles'
 
-#STATIC_URL = 'https://clgmaterial.herokuapp.com'+'/static/'    
-STATIC_URL = '/static/'
+STATIC_URL = 'https://clgmaterial.herokuapp.com'+'/static/'    
 
 
 STATICFILES_DIRS = (
