@@ -5,9 +5,16 @@
 
 .box {
 
-	border:1px red solid;
+	border:1px rgb(93, 143, 202) solid;
 	height:200px;
 	border-radius: 10px;
 	padding: 2%;
 	margin-left: 8%;
+	margin-bottom: 2%;
+	box-shadow: 7px 5px 7px 0px rgb(114, 107, 121);
+}
+
+.box h4 {
+
+	margin-top: 0px;
 }
