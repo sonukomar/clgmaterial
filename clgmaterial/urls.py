@@ -20,7 +20,9 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', views.home, name='home')
+    url(r'^$', views.home, name='home'),
+    url(r'^home$', views.home, name='home'),
+    url(r'^about-us$', views.about, name='about')
 ]
 
 if not settings.DEBUG:

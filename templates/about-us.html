@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {% block meta %}
+  {{ block.super }}
+    <meta charset="UTF-8">
+    <meta name="description" content="Online college lecture notes, Previous years question papers">
+    <meta name="keywords" content="college notes previous year question papers">
+    <meta name="author" content="Sonu Kumar">
+    
+    {% endblock %}
+    {% block css %}
+    
+         {{block.super}}
+         <link rel="Stylesheet" type="text/css" href="{% static "css/index.css" %}">
+    
+    {% endblock %} 
+
+    
+    {% block title %}
+
+        <title>collegematerial.com | About Us </title> 
+
+    {% endblock %}
+
+  </head>
+  <body>
+  {% block content %}
+
+  	{{block.super}}
+  	<div class="container-fluid">
+		<!-- <div class="row slider">
+			<div class="row slider text-center">
+				<div class="col-md-8 info">
+					<div class="col-md-10 slider_text">
+						<h3 class="quotes">Read/Download College lecture notes</h3>
+						<h3 class="quotes">Download last 10 yrs question papers</h3>
+						<h3 class="quotes">Get printed notes @ low prices</h3>
+						<h3 class="quotes">Call us @ 9590960483</h3>
+						<h3 class="quotes">saviour in exam's last time</h3>
+						<h3 class="quotes">Lets start the Preparation...JOIN US TODAY</h3>
+						
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="slider_img">
+						<img src="{% static "images/2.png" %}" alt="" class="img-responsive"/>
+					</div>
+				</div>
+
+			</div>
+		</div> -->
+		
+		<div class="row">
+			<div class="col-md-12 col-md-offset-0">
+				<h1>Who we are :</h1>
+				<p class="text-justify desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 col-md-offset-0">
+				<h1>What we provide:</h1>
+			<div class="col-md-3 box">
+				<h4><strong>Colleges:</strong></h4>
+				<ul>
+					<li>RVCE</li>
+					<li>RVCE</li>
+					<li>RVCE</li>
+					<li>RVCE</li>
+					<li>RVCE</li>
+
+				</ul>
+				<span class="pull-right"><a href="">..more</a></span>
+			</div>
+			<div class="col-md-3 box">
+				<h4><strong>Branches:</strong></h4>
+				<ul>
+					<li>CSE</li>
+					<li>ECE</li>
+					<li>EEE</li>
+					<li>MECH</li>
+					<li>CIVIL</li>
+
+				</ul>
+				<span class="pull-right"><a href="">..more</a></span>
+			</div>
+			<div class="col-md-3 box">
+				<h4><strong>Subjects:</strong></h4>
+				<ul>
+					<li>RVCE</li>
+					<li>RVCE</li>
+					<li>RVCE</li>
+					<li>RVCE</li>
+					<li>RVCE</li>
+
+				</ul>
+				<span class="pull-right"><a href="">..more</a></span>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+  {% endblock %}
+
+  {% block js %}
+
+  	{{ block.super }}
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+  			var nav = $(".navbar-collapse").find(".navbar-nav");
+  			var li = nav.find(".active");
+  			$(li).removeClass("active");
+  			$("#about").addClass("active");
+  			
+
+  		});
+  	</script>
+
+  {% endblock %}
+  </body>
+  </html>

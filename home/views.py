@@ -9,3 +9,12 @@ def home(request):
     template = 'index.html'
     context ={}    
     return render(request, template, context)    
+
+
+def about(request):
+    '''
+        It serves the about file to the client
+    '''
+    template = 'about-us.html'
+    context ={}    
+    return render(request, template, context)    

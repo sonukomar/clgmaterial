@@ -81,3 +81,15 @@
 
 	color:black;
 }
+
+.typeahead { z-index: 1051;}
+
+
+.tt-suggestion.tt-selectable {
+  background: rgba(182, 197, 226, 0.51);
+}
+
+.tt-menu {
+
+	width:100%;
+}
