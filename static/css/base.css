@@ -86,7 +86,9 @@
 
 
 .tt-suggestion.tt-selectable {
-  background: rgba(182, 197, 226, 0.51);
+  background: rgba(182, 197, 226, 1);
+  padding-left: 10%;
+  padding-bottom: 5%;
 }
 
 .tt-menu {
